@@ -1,6 +1,4 @@
 import {
-  faD,
-  faDownload,
   faFilePdf,
   faImage,
 } from "@fortawesome/free-solid-svg-icons";
@@ -10,27 +8,27 @@ import { useEffect, useState } from "react";
 
 function Powerpoints() {
   const [fileHidden1, setfileHidden1] = useState(true);
-  const [fileHidden2, setfileHidden2] = useState(true);
-  const [fileHidden3, setfileHidden3] = useState(true);
-  const [fileHidden4, setfileHidden4] = useState(true);
-  const [fileHidden5, setfileHidden5] = useState(true);
-  const [fileHidden6, setfileHidden6] = useState(true);
-  const [fileHidden7, setfileHidden7] = useState(true);
-  const [fileHidden8, setfileHidden8] = useState(true);
-  const [fileHidden9, setfileHidden9] = useState(true);
-  const [fileHidden10, setfileHidden10] = useState(true);
-  const [fileHidden11, setfileHidden11] = useState(true);
-  const [fileHidden12, setfileHidden12] = useState(true);
-  const [fileHidden13, setfileHidden13] = useState(true);
-  const [fileHidden14, setfileHidden14] = useState(true);
-  const [fileHidden15, setfileHidden15] = useState(true);
-  const [fileHidden16, setfileHidden16] = useState(true);
-  const [fileHidden17, setfileHidden17] = useState(true);
-  const [fileHidden18, setfileHidden18] = useState(true);
-  const [fileHidden19, setfileHidden19] = useState(true);
-  const [fileHidden20, setfileHidden20] = useState(true);
-  const [fileHidden21, setfileHidden21] = useState(true);
-  const [fileHidden22, setfileHidden22] = useState(true);
+  // const [fileHidden2, setfileHidden2] = useState(true);
+  // const [fileHidden3, setfileHidden3] = useState(true);
+  // const [fileHidden4, setfileHidden4] = useState(true);
+  // const [fileHidden5, setfileHidden5] = useState(true);
+  // const [fileHidden6, setfileHidden6] = useState(true);
+  // const [fileHidden7, setfileHidden7] = useState(true);
+  // const [fileHidden8, setfileHidden8] = useState(true);
+  // const [fileHidden9, setfileHidden9] = useState(true);
+  // const [fileHidden10, setfileHidden10] = useState(true);
+  // const [fileHidden11, setfileHidden11] = useState(true);
+  // const [fileHidden12, setfileHidden12] = useState(true);
+  // const [fileHidden13, setfileHidden13] = useState(true);
+  // const [fileHidden14, setfileHidden14] = useState(true);
+  // const [fileHidden15, setfileHidden15] = useState(true);
+  // const [fileHidden16, setfileHidden16] = useState(true);
+  // const [fileHidden17, setfileHidden17] = useState(true);
+  // const [fileHidden18, setfileHidden18] = useState(true);
+  // const [fileHidden19, setfileHidden19] = useState(true);
+  // const [fileHidden20, setfileHidden20] = useState(true);
+  // const [fileHidden21, setfileHidden21] = useState(true);
+  // const [fileHidden22, setfileHidden22] = useState(true);
   const [auth, setAuth] = useState(false);
   const [files, setFiles] = useState<any[]>([]);
   const password: any = sessionStorage.getItem("code");
