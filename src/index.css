@@ -1,0 +1,89 @@
+@import "tailwindcss";
+/* Paper.css */
+.paper {
+  background-color: #fff; /* white background */
+  border-radius: 16px; /* smooth rounded corners */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.12); /* soft elevation */
+  padding: 24px; /* inner spacing */
+  max-width: 600px; /* optional max width */
+  /* margin: 16px auto; center horizontally with margin */
+  transition: box-shadow 0.3s ease; /* smooth hover effect */
+}
+
+.paper:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), 0px 3px 3px rgba(0, 0, 0, 0.2),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .paper {
+    padding: 16px; /* reduce padding on small screens */
+  }
+}
+.burger {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  nav {
+    display: none;
+  }
+  nav.nav-active {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  nav.nav-active ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  nav.nav-active ul li:not(:last-child) {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  nav.nav-active ul li:hover {
+    color: rgb(245, 51, 51);
+  }
+  nav.nav-active ul li:last-child {
+    text-align: center;
+    width: 100%;
+  }
+  .burger {
+    background-color: #c1c1c1;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 20;
+    position: relative;
+  }
+  .burger span {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+  }
+}
