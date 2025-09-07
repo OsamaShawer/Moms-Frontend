@@ -34,7 +34,7 @@ function Powerpoints() {
   const password: any = sessionStorage.getItem("code");
   useEffect(() => {
     async function fetchFiles() {
-      const response = await fetch("http://localhost:3000/powerpoints", {
+      const response = await fetch("https://moms-backend-production.up.railway.app/powerpoints", {
         headers: { "x-password": password },
       });
       const data = await response.json();

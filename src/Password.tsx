@@ -13,7 +13,7 @@ function PasswordComponent() {
   }
   async function click() {
     setWrong(false);
-    const response = await fetch("http://localhost:3000", {
+    const response = await fetch("https://moms-backend-production.up.railway.app", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {

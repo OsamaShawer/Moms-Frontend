@@ -35,7 +35,7 @@ function Videos() {
       if (!password) {
         setAuth(false);
       } else {
-        const response = await fetch("http://localhost:3000/videos", {
+        const response = await fetch("https://moms-backend-production.up.railway.app/videos", {
           headers: { "x-password": password },
         });
         const data = await response.json();

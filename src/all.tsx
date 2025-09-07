@@ -41,7 +41,7 @@ function All() {
       if (!password) {
         setAuth(false);
       } else {
-        const response = await fetch("http://localhost:3000/all", {
+        const response = await fetch("https://moms-backend-production.up.railway.app/all", {
           headers: { "x-password": password },
         });
         const data = await response.json();
